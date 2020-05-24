@@ -12,6 +12,8 @@
 "   https://github.com/reedes/vim-colors-pencil (MIT License)
 "
 """
+set termguicolors
+set background=dark
 hi clear
 
 if exists('syntax on')
@@ -47,45 +49,24 @@ let s:light_purple    = { "gui": "#6855DE", "cterm": "5"  }
 let s:light_yellow    = { "gui": "#F3E430", "cterm": "3"  }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 
-if &background == "dark"
-  let s:bg              = s:black
-  let s:bg_subtle       = s:light_black
-  let s:bg_very_subtle  = s:subtle_black
-  let s:norm            = s:lighter_gray
-  let s:norm_subtle     = s:light_gray
-  let s:purple          = s:light_purple
-  let s:cyan            = s:light_cyan
-  let s:green           = s:light_green
-  let s:red             = s:light_red
-  let s:yellow          = s:light_yellow
-  let s:visual          = s:subtle_black
-  let s:cursor_line     = s:subtle_black
-  let s:status_line     = s:medium_gray
-  let s:status_line_nc  = s:light_black
-  let s:constant        = s:light_green
-  let s:comment         = s:lighter_black
-  let s:selection       = s:light_purple
-  let s:warning         = s:yellow
-else
-  let s:bg              = s:white
-  let s:bg_subtle       = s:lighter_gray
-  let s:bg_very_subtle  = s:light_gray
-  let s:norm            = s:light_black
-  let s:norm_subtle     = s:lighter_black
-  let s:purple          = s:dark_purple
-  let s:cyan            = s:dark_cyan
-  let s:green           = s:dark_green
-  let s:red             = s:dark_red
-  let s:yellow          = s:dark_yellow
-  let s:visual          = s:light_blue
-  let s:cursor_line     = s:medium_gray
-  let s:status_line     = s:medium_gray
-  let s:status_line_nc  = s:light_gray
-  let s:constant        = s:dark_blue
-  let s:comment         = s:light_gray
-  let s:selection       = s:light_yellow
-  let s:warning         = s:yellow
-endif
+let s:bg              = s:black
+let s:bg_subtle       = s:light_black
+let s:bg_very_subtle  = s:subtle_black
+let s:norm            = s:lighter_gray
+let s:norm_subtle     = s:light_gray
+let s:purple          = s:light_purple
+let s:cyan            = s:light_cyan
+let s:green           = s:light_green
+let s:red             = s:light_red
+let s:yellow          = s:light_yellow
+let s:visual          = s:subtle_black
+let s:cursor_line     = s:subtle_black
+let s:status_line     = s:medium_gray
+let s:status_line_nc  = s:light_black
+let s:constant        = s:light_green
+let s:comment         = s:light_gray
+let s:selection       = s:light_purple
+let s:warning         = s:yellow
 
 " https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
