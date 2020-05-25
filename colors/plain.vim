@@ -62,7 +62,7 @@ let s:cursor_line     = s:subtle_black
 let s:status_line     = s:medium_gray
 let s:status_line_nc  = s:light_black
 let s:constant        = s:light_green
-let s:comment         = s:lighter_gray
+let s:comment         = s:light_gray
 let s:selection       = s:light_purple
 let s:warning         = s:yellow
 
