@@ -12,8 +12,6 @@
 "   https://github.com/reedes/vim-colors-pencil (MIT License)
 "
 """
-set termguicolors
-set background=dark
 hi clear
 
 if exists('syntax on')
@@ -52,7 +50,7 @@ let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 let s:bg              = s:black
 let s:bg_subtle       = s:light_black
 let s:bg_very_subtle  = s:subtle_black
-let s:norm            = s:lightest_gray
+let s:norm            = s:lighter_gray
 let s:norm_subtle     = s:light_gray
 let s:purple          = s:light_purple
 let s:cyan            = s:light_cyan
@@ -64,7 +62,7 @@ let s:cursor_line     = s:subtle_black
 let s:status_line     = s:medium_gray
 let s:status_line_nc  = s:light_black
 let s:constant        = s:light_green
-let s:comment         = s:light_gray
+let s:comment         = s:lighter_gray
 let s:selection       = s:light_purple
 let s:warning         = s:yellow
 
