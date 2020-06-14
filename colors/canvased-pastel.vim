@@ -1,4 +1,4 @@
-" Name:       canvassed-pastel.vim
+" Name:       canvased-pastel.vim
 " Version:    0.1
 " Maintainer: github.com/brihadeesh
 " License:    The MIT License (MIT)
@@ -18,7 +18,7 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='canvassed-pastel'
+let g:colors_name='canvased-pastel'
 
 let s:black           = { "gui": "#170f0d", "cterm": "0"   }
 let s:medium_gray     = { "gui": "#534d35", "cterm": "8" }
