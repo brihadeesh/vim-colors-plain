@@ -1,4 +1,4 @@
-" Name:       canvased-pastel.vim
+" Name:       balaam.vim
 " Version:    0.1
 " Maintainer: github.com/brihadeesh
 " License:    The MIT License (MIT)
@@ -11,6 +11,10 @@
 "
 "   https://github.com/reedes/vim-colors-pencil (MIT License)
 "
+" and
+"
+"   dkeg-canvasedpastel https://xcolors.net
+"
 """
 hi clear
 
@@ -18,7 +22,7 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='canvased-pastel'
+let g:colors_name='balaam'
 
 let s:black           = { "gui": "#170f0d", "cterm": "0"   }
 let s:medium_gray     = { "gui": "#534d35", "cterm": "8" }
