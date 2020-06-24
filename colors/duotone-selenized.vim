@@ -88,7 +88,7 @@ call s:h("Normal",        {"bg": s:bg, "fg": s:norm,})
 call s:h("Noise",         {"bg": s:bg, "fg": s:norm_subtle})
 call s:h("Cursor",        {"bg": s:green, "fg": s:norm})
 call s:h("Comment",       {"fg": s:comment, "cterm": "italic"})
-call s:h("Function",      {"fg": s:norm, "cterm": "bold"})
+call s:h("Function",      {"fg": s:norm})
 
 call s:h("Constant",      {"bg": s:bg, "fg": s:constant})
 hi! link Character        Constant
@@ -101,7 +101,7 @@ hi! link String           Constant
 hi! link Identifier       Normal
 
 "hi! link Statement        Normal
-call s:h("Statement",     {"bg": s:bg, "fg": s:norm_bold, "cterm": "bold"})
+call s:h("Statement",     {"bg": s:bg, "fg": s:norm_bold})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
@@ -130,7 +130,7 @@ hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
 
-hi! link Conceal          NonText
+" hi! link Conceal          NonText
 
 call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",        {"fg": s:bg})
@@ -145,7 +145,7 @@ call s:h("Search",        {"bg": s:selection, "fg": s:black})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:medium_gray})
-call s:h("CursorLineNr",  {"fg": s:green, "bg": s:bg_very_subtle})
+call s:h("CursorLineNr",  {"fg": s:yellow, "bg": s:bg})
 call s:h("Question",      {"fg": s:red})
 call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg_very_subtle})
 call s:h("Title",         {"fg": s:dark_green})
@@ -160,6 +160,7 @@ call s:h("DiffDelete",    {"fg": s:red})
 call s:h("DiffChange",    {"fg": s:dark_yellow})
 call s:h("DiffText",      {"fg": s:dark_green})
 call s:h("SignColumn",    {"fg": s:medium_gray})
+call s:h("NonText",   	  {"fg": s:bg})
 
 if has("gui_running")
   call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
@@ -189,12 +190,12 @@ call s:h("StatusLineError",   {"gui": "underline", "bg": s:bg, "fg": s:red})
 call s:h("StatusLineWarning", {"gui": "underline", "bg": s:bg, "fg": s:warning})
 
 call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_very_subtle})
-call s:h("PmenuSel",      {"fg": s:green, "bg": s:bg_very_subtle, "gui": "bold"})
+call s:h("PmenuSel",      {"fg": s:norm_bold, "bg": s:bg_very_subtle})
 call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_subtle})
 call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("TabLine",       {"fg": s:norm_subtle, "bg": s:bg})
-call s:h("TabLineSel",    {"fg": s:norm, "bg": s:bg, "gui": "bold", "cterm": "bold"})
-call s:h("TabLineFill",   {"fg": s:norm_subtle, "bg": s:bg})
+call s:h("TabLine",       {"fg": s:comment, "bg": s:bg})
+call s:h("TabLineSel",    {"fg": s:norm_bold, "bg": s:bg, "gui": "bold", "cterm": "bold"})
+call s:h("TabLineFill",   {"fg": s:comment, "bg": s:bg})
 call s:h("CursorColumn",  {"bg": s:bg_very_subtle})
 call s:h("CursorLine",    {"bg": s:cursor_line})
 call s:h("ColorColumn",   {"bg": s:bg_subtle})
