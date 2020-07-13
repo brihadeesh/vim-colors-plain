@@ -64,7 +64,7 @@ let s:green           = s:light_green
 let s:red             = s:light_red
 let s:yellow          = s:light_yellow
 let s:visual          = s:subtle_black
-let s:cursor_line     = s:lighter_black
+let s:cursor_line     = s:light_black
 let s:status_line     = s:medium_gray
 let s:status_line_nc  = s:light_black
 let s:constant        = s:lightest_gray
@@ -193,9 +193,9 @@ call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_very_subtle})
 call s:h("PmenuSel",      {"fg": s:norm_bold, "bg": s:bg_very_subtle})
 call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_subtle})
 call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("TabLine",       {"fg": s:comment, "bg": s:bg})
+call s:h("TabLine",       {"fg": s:comment, "bg": s:cursor_line})
 call s:h("TabLineSel",    {"fg": s:norm_bold, "bg": s:bg, "gui": "bold", "cterm": "bold"})
-call s:h("TabLineFill",   {"fg": s:comment, "bg": s:bg})
+call s:h("TabLineFill",   {"fg": s:comment, "bg": s:cursor_line})
 call s:h("CursorColumn",  {"bg": s:bg_very_subtle})
 call s:h("CursorLine",    {"bg": s:cursor_line})
 call s:h("ColorColumn",   {"bg": s:bg_subtle})
